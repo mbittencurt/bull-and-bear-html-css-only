@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bull & Bear Binary - Tu plataforma de inversiones binarias. ¡Toro o Oso, el futuro es tuyo!">
+    <meta name="keywords" content="inversiones, opciones binarias, Bull and Bear, mercado financiero">
+    <meta name="author" content="Bull & Bear Binary">
+    <title>Bull & Bear Binary - Inversiones</title>
+    <link rel="stylesheet" href="./src/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./src/imagens/Logo Bull and Bear.png" alt="Logo de Bull & Bear Binary" width="100" height="100">
+            <h1>Bull & Bear Binary</h1>
+            <p class="slogan">¡Toro o Oso, el futuro es tuyo!</p>
+        </div>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="info.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#login">Login / Registro</a></li>
+            </ul>
+        </nav>
+        <address class="contact-info">
+            <div class="contact-item">
+                <img src="./src/imagens/Telefone.png" alt="Ícono de teléfono" width="24" height="24">
+                <a href="tel:+551199999999">+55 11 9999-9999</a>
+            </div>
+            <div class="contact-item">
+                <img src="./src/imagens/e-mail.png" alt="Ícono de correo electrónico" width="24" height="24">
+                <a href="mailto:atendimento@bearandbull.com">atendimento@bearandbull.com</a>
+            </div>
+        </address>
+    </header>
+    <main>
+        <section aria-labelledby="newsletter-heading">
+            <h2 id="newsletter-heading">Suscríbete a nuestro boletín</h2>
+            <p>Recibe los mejores consejos y actualizaciones del mercado financiero directamente en tu correo. ¡Únete a Bull & Bear Binary y toma decisiones informadas!</p>
+        </section>
+        <picture class="background-image">
+            <img src="./src/imagens/Fundo Binário.jpg" alt="Gráfico binario con transparencia en el fondo" loading="lazy">
+        </picture>
+        <aside>
+            <form action="/submit" method="POST" aria-label="Formulario de suscripción al boletín">
+                <div class="form-group">
+                    <label for="nombre-formulario">Nombre:</label>
+                    <input type="text" id="nombre-formulario" name="nombre" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-formulario">Correo Electrónico:</label>
+                    <input type="email" id="email-formulario" name="email" placeholder="Introduce tu mejor correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono-formulario">Teléfono:</label>
+                    <input type="tel" id="telefono-formulario" name="telefono" placeholder="Introduce tu mejor teléfono" pattern="[0-9]{10,11}">
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <nav aria-label="Menú de pie de página">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#login">Login / Registro</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>© 2023-2024 Bull & Bear Binary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

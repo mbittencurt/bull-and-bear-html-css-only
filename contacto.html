@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Bull & Bear Binary para consultas sobre inversiones binarias y day trading.">
+    <meta name="keywords" content="contacto, inversiones, Bull and Bear">
+    <meta name="author" content="Bull & Bear Binary">
+    <title>Bull & Bear Binary - Contacto</title>
+    <link rel="stylesheet" href="./src/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./src/imagens/Logo Bull and Bear.png" alt="Logo de Bull & Bear Binary" width="100" height="100">
+            <h1>Bull & Bear Binary</h1>
+            <p class="slogan">¡Toro o Oso, el futuro es tuyo!</p>
+        </div>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="#login">Login / Registro</a></li>
+            </ul>
+        </nav>
+        <address class="contact-info">
+            <div class="contact-item">
+                <img src="./src/imagens/Telefone.png" alt="Ícono de teléfono" width="24" height="24">
+                <a href="tel:+551199999999">+55 11 9999-9999</a>
+            </div>
+            <div class="contact-item">
+                <img src="./src/imagens/e-mail.png" alt="Ícono de correo electrónico" width="24" height="24">
+                <a href="mailto:atendimento@bearandbull.com">atendimento@bearandbull.com</a>
+            </div>
+        </address>
+    </header>
+    <main>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contáctanos</h2>
+            <p>Estamos aquí para ayudarte con tus consultas sobre inversiones. Completa el formulario o visítanos en nuestra oficina.</p>
+            <div class="contact-container">
+                <form action="/contact-submit" method="POST" aria-label="Formulario de contacto">
+                    <div class="form-group">
+                        <label for="nombre-contacto">Nombre:</label>
+                        <input type="text" id="nombre-contacto" name="nombre" placeholder="Introduce tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-contacto">Correo Electrónico:</label>
+                        <input type="email" id="email-contacto" name="email" placeholder="Introduce tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono-contacto">Teléfono:</label>
+                        <input type="tel" id="telefono-contacto" name="telefono" placeholder="Introduce tu teléfono" pattern="[0-9]{10,11}">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje-contacto">Mensaje:</label>
+                        <textarea id="mensaje-contacto" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </form>
+                <div class="contact-details">
+                    <h3>Nuestra Ubicación</h3>
+                    <address>
+                        <p>Avenida Paulista, 1234, São Paulo, SP, Brasil</p>
+                        <p>Teléfono: <a href="tel:+551199999999">+55 11 9999-9999</a></p>
+                        <p>Correo: <a href="mailto:atendimento@bearandbull.com">atendimento@bearandbull.com</a></p>
+                    </address>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456789!2d-46.657123456789!3d-23.565123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7b6f7f6e3%3A0x9e6f7b8c9a2b3c4d!2sAv.%20Paulista%2C%201234%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%20Brasil!5e0!3m2!1ses!2sbr!4v1698765432109!5m2!1ses!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav aria-label="Menú de pie de página">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#login">Login / Registro</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>© 2023-2024 Bull & Bear Binary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
